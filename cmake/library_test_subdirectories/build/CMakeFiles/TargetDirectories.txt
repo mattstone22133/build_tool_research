@@ -1,0 +1,4 @@
+C:/Users/matts/Desktop/BuildToolExploration/cmake/library_test_subdirectories/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/library_test_subdirectories/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/library_test_subdirectories/build/library_dir/CMakeFiles/HelloLibrary.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/library_test_subdirectories/build/executable_dir/CMakeFiles/UsesLibrary.dir

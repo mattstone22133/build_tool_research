@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\matts\Desktop\BuildToolExploration\cmake\library_test_subdirectories\library_dir\src\HelloLib\hello.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\matts\Desktop\BuildToolExploration\cmake\library_test_subdirectories\library_dir\src\HelloLib\hello.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\matts\Desktop\BuildToolExploration\cmake\library_test_subdirectories\library_dir\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{547823EF-E072-3B02-9033-718CD3C57C20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DF1A7A48-595A-35FC-A528-7A1740544149}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

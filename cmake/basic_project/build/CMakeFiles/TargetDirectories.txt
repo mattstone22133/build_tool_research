@@ -1,0 +1,3 @@
+C:/Users/matts/Desktop/BuildToolExploration/cmake/basic_project/build/CMakeFiles/programName.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/basic_project/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/basic_project/build/CMakeFiles/ZERO_CHECK.dir

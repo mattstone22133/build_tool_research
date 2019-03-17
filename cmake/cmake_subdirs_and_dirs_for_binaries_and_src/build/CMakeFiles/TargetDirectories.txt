@@ -1,0 +1,6 @@
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/library_dir/CMakeFiles/HelloLibrary.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/library_dir/CMakeFiles/ALL_BUILD.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/executable_dir/CMakeFiles/UsesLibrary.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_subdirs_and_dirs_for_binaries_and_src/build/executable_dir/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\matts\Desktop\BuildToolExploration\cmake\cmake_config_scripting_1_advanced\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\matts\Desktop\BuildToolExploration\cmake\cmake_config_scripting_1_advanced\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D883FD0A-4738-3CC6-9ECF-7747F865A1FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

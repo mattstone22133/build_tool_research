@@ -1,0 +1,17 @@
+the "msbuild" project is located in 
+    "C:\Windows\Microsoft.NET\Framework64\v4.0.30319"
+
+You need to add this to your envionrment variables for it to be available in normal cmd prompt
+    https://stackoverflow.com/questions/6319274/how-do-i-run-msbuild-from-the-command-line-using-windows-sdk-7-1f
+
+my prefered way:
+    -nevermind, this also requires visual studio developer console
+    msbuild project.sln /Flags...
+        -example
+            msbuild TestProject.sln 
+                -no flags given, this is in the cmake basic_project folder
+
+microsoft's documenation way:
+    -they want you to open the visual studio developers console
+    -type cl main.cpp
+        -or add exception handling: cl /EHsc main.cpp

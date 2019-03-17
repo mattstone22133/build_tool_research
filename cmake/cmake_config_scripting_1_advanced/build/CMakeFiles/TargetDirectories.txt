@@ -1,0 +1,3 @@
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_config_scripting_1_advanced/build/CMakeFiles/programName.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_config_scripting_1_advanced/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matts/Desktop/BuildToolExploration/cmake/cmake_config_scripting_1_advanced/build/CMakeFiles/ZERO_CHECK.dir
