@@ -41,6 +41,11 @@ cmake --version
         cmake --build <dir> [options] [-- [native-options]]
         cmake --build ./cmake_cache_directory/
 
+        (example useage)
+            cd build
+            cmake ..                            //generates cmake cache
+            cmake --build . --config release    //builds the output 
+
     script cmds:
         add_executable(name file1.cpp, file2.cpp)
     
@@ -57,7 +62,7 @@ cmake --version
 //video 4: Adding Libraries
 ///////////////////////////////////////////////////////////////////////////////////
     cmds:
-        cmake -D BUILD_SHARED_LIBS=true
+        cmake -D BUILD_SHARED_LIBS=true         //override default
 
     script:
         add_library(
@@ -109,7 +114,7 @@ cmake --version
         echo $env:INCLUDE
             -include paths separated with ;
         echo $env:LIB
-            -semicolo separated list of where linker searches for library files
+            -semicolon separated list of where linker searches for library files
     Continuous Integration
         -to get compiling in command prompt:
             run: "ProgramFiles(x86)\MicrosoftVisualStudio\2017\BuildTools\VC\Auxillary\Build\vcvarsall.bat
@@ -391,6 +396,9 @@ cmake --version
 ///////////////////////////////////////////////////////////////////////////////////
 //video 13
 ///////////////////////////////////////////////////////////////////////////////////
+
+    cmds    
+        cmake -P script.cmake   //this runs cmake in script mode! good for testing
 
     -you can add functions to files to be used in multiple CMakeList.txt
         -these functions are added to files ending in .cmake
