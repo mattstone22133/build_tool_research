@@ -1,0 +1,72 @@
+#see https://stackoverflow.com/questions/55329834/cmake-how-to-build-then-link-a-library-within-configure-step
+
+cmake_minimum_required(VERSION 3.0)
+
+project(OpenGLBasedApp VERSION 1.0)
+
+
+#########################################################################################################
+# GLFW
+#########################################################################################################
+
+
+#-----clone GLFW repository-----
+set(glfw_dir_rel "./third_party/git_repos/glfw")
+message(STATUS "running command:" ${git_clone_glfw_cmd})
+execute_process(
+    COMMAND git clone https://github.com/glfw/glfw.git ${glfw_dir_rel}
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+    OUTPUT_VARIABLE git_glfw_clone_output
+    RESULT_VARIABLE git_glfw_clone_result
+    ERROR_QUIET
+    )
+# message(STATUS "clone return status: ${git_glfw_clone_result}") 0 on success, 128 on already cloned
+
+#-----switch to specific commit; change this if you want latest version-----
+set(supported_glfw_commit "8d7e5cdb49a1a5247df612157ecffdd8e68923d2")
+set(glfw_dir_abs "${PROJECT_SOURCE_DIR}${glfw_dir_rel}")
+message(STATUS "${glfw_dir_abs}")
+#if(git_glfw_clone_result EQUAL "0")
+    message(STATUS "glfw clone successful -- checking out stable commit ${supported_glfw_commit}")
+    execute_process(
+        COMMAND git checkout ${supported_glfw_commit}
+        WORKING_DIRECTORY "${glfw_dir_abs}"
+        OUTPUT_VARIABLE glfw_checkout_std_out
+        RESULT_VARIABLE glfw_checkout_ret_val
+        #ERROR_QUIET
+    )
+    #message(STATUS ::: ${glfw_checkout_std_out})
+    #message(STATUS ::: ${glfw_checkout_ret_val})
+#endif()
+
+# ----- build GLFW to use -----
+
+#the output location of this library may be playform dependent and should be tested
+#make the directory for build; relative path seems to be required as directory does not show up with concatenated path
+set(glfw_build_dir_rel "${glfw_dir_rel}/build")
+file(MAKE_DIRECTORY "${glfw_build_dir_rel}")
+message(STATUS "building GLFW, this may take a moment...")
+execute_process(
+    COMMAND cmake ..
+    COMMAND cmake --build . --config Release
+    WORKING_DIRECTORY "${glfw_build_dir_rel}"
+    OUTPUT_VARIABLE glfw_build_out
+    RESULT_VARIABLE glfw_build_ret
+    #ERROR_QUIET
+)
+message(STATUS "glfw status: \n ${glfw_build_ret}")
+message(STATUS "glfw build:  \n ${glfw_build_out}")
+
+
+#########################################################################################################
+# Main Application
+#########################################################################################################
+
+file(GLOB_RECURSE app_files_var 
+    "src/*.h"
+    "src/*.c"
+    "src/*.hpp"
+    "src/*.cpp"
+)
+
+add_executable(App ${app_files_var})

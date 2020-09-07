@@ -450,4 +450,7 @@ cmake --version
 
 
 ///////////////////////////////////////////////////////////////////////////////////
+
+FetchContent may can be used to download a git repository as part of configure step
+    https://cmake.org/cmake/help/v3.11/module/FetchContent.html
  
